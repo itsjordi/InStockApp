@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace InStockApp
+﻿namespace InStockApp
 {
-    public interface ICars
+    public interface ICar
     {
+        int Id { get; set; }
         string Kenteken { get; set; }
-        int CarID { get; set; }
-        int KMStand { get; set; }
+        int EstablishedYear { get; set; }
+        int Price { get; set; }
+        int KM { get; set; }
+        string CarName { get; set; }
     }
 }
